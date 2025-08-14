@@ -32,9 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Cek apakah datang dari halaman awal
 if (sessionStorage.getItem("fromIndex") !== "true") {
-  window.location.href = "index.html"; // balik ke awal
+  window.location.href = "https://fahri-husain.github.io/HappyBirthday/index.html"; // balik ke awal
 } else {
   // Hapus tanda biar kalau refresh balik ke awal
   sessionStorage.removeItem("fromIndex");
 }
+
 
