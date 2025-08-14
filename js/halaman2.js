@@ -259,7 +259,7 @@ BTN.addEventListener('click', () => {
     setTimeout(() => {
       // Simpan tanda bahwa user datang dari halaman awal
       sessionStorage.setItem("fromIndex", "true");
-      window.location.href = "halaman3.html";
+      window.location.href = "https://fahri-husain.github.io/HappyBirthday/halaman3.html";
     }, 1000);
   }, 23000);
 });
@@ -276,7 +276,7 @@ BTN.addEventListener('click', () => {
     document.body.classList.add('slide-up');
     setTimeout(() => {
       sessionStorage.setItem("fromIndex", "true");
-      window.location.href = "halaman3.html";
+      window.location.href = "https://fahri-husain.github.io/HappyBirthday/halaman3.html";
     }, 1000);
   }, 23000);
 });
@@ -289,6 +289,7 @@ blowButton.addEventListener('click', () => {
   butterflies.classList.add('dark'); // kupu-kupu ikut gelap
 });
 SOUNDS.TUNE.muted = SOUNDS.MATCH.muted = SOUNDS.HORN.muted = SOUNDS.POP.muted = SOUNDS.CHEER.muted = SOUNDS.BLOW.muted = SOUNDS.ON.muted = false;
+
 
 
 
