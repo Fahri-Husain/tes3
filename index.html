@@ -183,36 +183,6 @@
       </div>
     </div>
   </netflixintro>
-  <!-- Tambahkan elemen audio di sini -->
-  <audio id="intro-audio" preload="auto">
-    <!-- PASTIKAN MENGGANTI 'intro_music.mp3' DENGAN NAMA FILE AUDIO ANDA -->
-    <source src="audio/netflix.mp3" type="audio/mpeg">
-    <!-- Anda bisa menambahkan format lain untuk kompatibilitas yang lebih baik -->
-    <!-- <source src="intro_music.ogg" type="audio/ogg"> -->
-    Browser Anda tidak mendukung elemen audio.
-  </audio>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const introAudio = document.getElementById('intro-audio');
-      const animationDuration = 6000; // Durasi animasi dalam milidetik (6 detik)
-      // Coba putar audio secara otomatis
-      introAudio.play().then(() => {
-        console.log("Audio diputar secara otomatis.");
-      }).catch(error => {
-        // Autoplay mungkin diblokir oleh browser
-        console.log("Autoplay diblokir:", error);
-        // Jika ini terjadi, audio tidak akan diputar sampai ada interaksi pengguna.
-        // Untuk animasi intro, ini adalah tantangan umum.
-        // Anda bisa menambahkan pesan atau instruksi kepada pengguna jika audio tidak otomatis diputar.
-      });
-      // Atur timeout untuk menghentikan audio setelah 6 detik
-      setTimeout(() => {
-        introAudio.pause(); // Hentikan audio
-        introAudio.currentTime = 0; // Reset audio ke awal (opsional)
-      }, animationDuration);
-    });
-  </script>
-
 <script src="/js/script.js"></script>
 </body>
 </html>
